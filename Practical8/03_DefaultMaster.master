@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="DefaultMaster" Codebehind="03_DefaultMaster.master.cs" %>
+<%@ Register TagPrefix="Ad" TagName="General" Src="~/general.ascx" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <style type="text/css">
+        html
+        {
+            background-color:#ACCDFF;
+            font:14px Arial,Sans-Serif;
+        }
+        .content
+        {
+            margin:auto;
+            width:700px;
+            background-color:white;
+            
+        }
+        .leftColumn
+        {
+            float:left;
+            padding:5px;
+            width:450px;
+            height:400px;
+
+        }
+          .rightColumn 
+        {
+            float:right;
+            width:225px;
+            height:450px;
+            text-align:center;
+        }
+        .footer
+        {
+        	padding: 5px 10px 5px 10px;
+            font-family:Calibri;
+            font-size:small;
+        	height:50px;
+        	background-color:#78EF78;
+        	border-top:solid 1px black;
+        	text-align:center;
+        }
+        .ad
+        {
+            height:300px;
+            background-color:silver;
+            margin-bottom:10px;
+        }
+        .menu
+        {
+        	margin: 10px 0px 5px 10px;
+        }
+        .clear
+        {
+            clear:both;
+        }
+        .title
+        {
+        	font-family:Calibri;
+        }
+    </style>
+    <title>Ad Site</title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <div class="content">
+        <div class="leftColumn">
+            <asp:contentplaceholder
+                id="ContentPlaceHolder1"
+                runat="server"/>
+
+        </div>
+        
+        <div class="rightColumn">
+            <div class="ad">
+            <asp:ContentPlaceHolder
+                id="contentAd"
+                Runat="server">
+                <div>
+
+                </div>
+            </asp:ContentPlaceHolder>
+            </div>
+            <div id="menu">
+                <asp:ImageButton ID="ImageButton1" runat="server" 
+                    ImageUrl="~/Images/home_button.jpg" onclick="ImageButton1_Click" 
+                    CausesValidation="False" />
+                <br />
+                <asp:ImageButton ID="ImageButton2" runat="server" 
+                    ImageUrl="~/Images/shop_button.jpg" onclick="ImageButton2_Click" 
+                    CausesValidation="False" />
+                <br />
+                <asp:ImageButton ID="ImageButton3" runat="server" 
+                    ImageUrl="~/Images/contact_button.jpg" onclick="ImageButton3_Click" 
+                    CausesValidation="False" />
+            </div>
+
+        </div>
+        <br class="clear" />
+        <div class="footer">
+                © 2009 Copyright Shaw Megamall. All rights reserved. Terms &amp; Conditions, Privacy 
+            Policy and Disclaimer. <br /> Site is best viewed at 1024x786. 	
+
+    </div>
+    </div>
+     
+    </form>
+
+</body>
+</html>
