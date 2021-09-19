@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Practical2LabExercise.master.cs" Inherits="Practical2LabExercise.Practical2LabExercise" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 34px;
+        }
+        .auto-style2 {
+            height: 49px;
+        }
+        .auto-style3 {
+            width: 338px;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 207px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="auto-style2" style="font-size: 40px; font-weight: bold;display:flex;justify-content:center;">
+            Student Portal Page
+
+        </div>
+        <div class="auto-style1" style="font-size: large;border:3px solid black;padding:5px;">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="Medium" PathSeparator=" : ">
+                <CurrentNodeStyle ForeColor="#333333" />
+                <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+                <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+                <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+            </asp:SiteMapPath>
+        </div>
+    <table class="auto-style4">
+        <tr>
+            <td class="auto-style3" style="border:3px solid black;padding:5px;">
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" Height="541px" ImageSet="Arrows" Width="337px" OnSelectedNodeChanged="TreeView1_SelectedNodeChanged">
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+            <td style="border:3px solid black;padding:5px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
