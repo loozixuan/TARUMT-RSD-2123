@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="general" Codebehind="general.ascx.cs" %>
+<asp:ImageButton CausesValidation="false" ID="ImageButton1" runat="server" ImageUrl="~/Images/ad-general.jpg" Width="225px" OnClientClick="javascript:window.open('http://www.htc.com', 'new')" />
