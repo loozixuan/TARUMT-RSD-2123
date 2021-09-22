@@ -3,12 +3,12 @@
 **Revision purpose**
 
 1. BACS2042 Research Method
- - Extra notes from RM slides  
+   - Extra notes from RM slides  
 3. BACS2063 Data Structures and Algorithms
- - Most of the practical answers are included in Chapter source code   
+   - Most of the practical answers are included in Chapter source code   
 4. BACS2163 Software Engineering
- - Tutorial  
+   - Tutorial  
 6. BAIT2113 Web Application Development
- - Practical
+   - Practical
 8. BAIT2203 Human Computer Interaction
- - Tutorial 
+   - Tutorial 
