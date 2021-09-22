@@ -1,10 +1,14 @@
-# Software-System-Development-Y2S1
+# Software Systems Development Y2S1 #
 
 **Revision purpose**
 
 1. BACS2042 Research Method
-2. BACS2063 Data Structures and Algorithms
-   - Most of the practical answers are included in Chapter source code   
-3. BACS2163 Software Engineering
-4. BAIT2113 Web Application Development
-5. BAIT2203 Human Computer Interaction
+ - Extra notes from RM slides  
+3. BACS2063 Data Structures and Algorithms
+ - Most of the practical answers are included in Chapter source code   
+4. BACS2163 Software Engineering
+ - Tutorial  
+6. BAIT2113 Web Application Development
+ - Practical
+8. BAIT2203 Human Computer Interaction
+ - Tutorial 
