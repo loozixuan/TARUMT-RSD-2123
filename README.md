@@ -3,7 +3,8 @@
 **Revision purpose**
 
 1. BACS2042 Research Method
-   - Extra notes from RM slides  
+   - Extra notes from RM slides
+   - Answer for quiz 1 - 7
 3. BACS2063 Data Structures and Algorithms
    - Most of the practical answers are included in Chapter source code   
 4. BACS2163 Software Engineering
