@@ -1,6 +1,6 @@
 # Software Systems Development Y2S1 #
 
-**Revision purpose**
+`Revision purpose`
 
 > Notes: Some of the tutorial and practical answers might not be accurate. Do approach tutor for a more accurate solution
 
