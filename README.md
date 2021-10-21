@@ -2,7 +2,12 @@
 
 **Revision purpose**
 
-1. BACS2042 Research Method
+> Notes: Some of the tutorial and practical answers might not be accurate. Do approach tutor for a more accurate solution
+
+1. BACS2053 Object Oriented and Analysis Design
+   - Tutorial
+
+2. BACS2042 Research Method
    - Assignment Template
    - Extra notes from RM slides
    - Answer for quiz 1 - 7
