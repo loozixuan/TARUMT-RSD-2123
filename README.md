@@ -32,3 +32,5 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66896420/138994084-8cc64d0a-7e98-470c-8911-88177b2a0778.png">
 </p>
+
+> Remark: Assignment mark for BACS2063 Data Structures and Algorithms is **70%**
