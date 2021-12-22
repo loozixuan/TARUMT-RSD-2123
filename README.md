@@ -10,5 +10,5 @@
 | 4.  | BACS2163 Software Engineering  | Y2S1  | Tutorial Answers |
 | 5.  | BAIT2113 Web Application Development  | Y2S1  | Practical Codes  |
 | 6.  | BAIT2203 Human Computer Interaction  | Y2S1  | Tutorial Answers  |
-| 7.  | BAIT1093 Introduction to Computer Security  | Y2S2  | Tutorial Answers |
+| 7.  | BAIT1093 Introduction to Computer Security  | Y2S2  | Tutorial Answers, Past year papers (try), AES,RSA,DH Calculation |
 | 8.  | BAIT3153 Software Project Management  | Y2S2  | Tutorial Answers |
