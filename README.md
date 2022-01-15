@@ -1,8 +1,8 @@
-# Software Systems Development Y2S1 #
+## Bachelor of Information Technology (Honours) in Software Systems Development - RSD 
 
-`Revision purpose`
+Learning materials in **Degree-RSD** for revision purposes *(this learning process is still ongoing)*. The materials in this repository include self-study notes, tutorial answers, practical codes, PYQ tried or discussed by lecturer/tutor, and some extra notes for a particular subject.
 
-| No  | Subject Name | Sem | Materials |
+| No  | Subject Name | Sem | Materials Included in this subject |
 | ------------- | ------------- | ------------- | ------------- |
 | 1.  | BACS2053 Object Oriented and Analysis Design  | Y2S1  | Tutorial Answers  |
 | 2.  | BACS2042 Research Method  | Y2S1  | Assignment Template, Extra notes from RM slides, Answer for quiz 1 - 7, Past year midterm  |
