@@ -16,3 +16,7 @@
 | 6.  | BAIT2203 Human Computer Interaction  | Y2S1  | Tutorial Answers, Self study note, Past year papers (try) |
 | 7.  | BAIT1093 Introduction to Computer Security  | Y2S2  | Tutorial Answers, Past year papers (try), AES,RSA,DH Calculation |
 | 8.  | BAIT3153 Software Project Management  | Y2S2  | Tutorial Answers, Past year papers (try) |
+| 9.  | BAIT2123 Internet Of Things  | Y2S3  | Practical Codes, Weekly Self Practical Notes |
+| 10.  | BAIT3173 Integrative Programming  | Y2S3  | Practical Codes, Self assignment notes |
+| 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
+| 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes |
