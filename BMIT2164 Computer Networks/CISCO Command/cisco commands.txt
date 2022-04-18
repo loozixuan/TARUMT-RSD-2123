@@ -1,0 +1,327 @@
+Switch Verification Commands
+-----------------------------------
+S1# show interfaces [interface-id]
+S1# show startup-config
+S1# show run
+S1# show mac-address-table
+
+Interface verifation commands
+----------------------------------
+show ip interface brief 
+show ipv6 interface brief 
+show running-config interface interface-id
+show ip route
+show ipv6 route
+
+SSH configuration
+---------------------
+S1# show ip ssh
+S1(config)# ip domain-name cisco.com
+S1(config)# crypto key generate rsa
+How many bits in the modulus [512]: 1024
+S1(config)# username admin secret ccna
+S1(config)# line vty 0 15
+S1(config-line)# transport input ssh
+S1(config-line)# login local
+S1(config-line)# exit
+S1(config)# ip ssh version 2
+
+Basic switch configuration
+--------------------------------
+hostname S1
+no ip domain-lookup
+enable secret password class
+line console 0
+password cisco
+login
+line vty 0 15
+password cisco
+login 
+service password-encryption
+banner motd "This is a secure system. Authorized Access only"
+clock set 18:04:00 16 February 2022 (enable mode)
+copy run start
+
+ip address 182.168.0.1 255.255.255.0
+no shutdown
+ip default-gateway 192.168.1.2
+no logging console // To stop the console logging
+exec-timeout 0 0
+
+Router Configuration 1.6.2
+-------------------------------
+enable
+conf t
+hostname R1
+ip domain-name ccna-lab.com
+no ip domain-lookup
+service password-encryption
+security passwords min-length 12
+username SSHadmin secret 55Hadm!n2020
+crypto key generate rsa 
+enable secret $cisco!PRIV*
+line console 0 
+password $cisco!!CON*
+exec-timeout 4
+login 
+line vty 0 4
+password $cisco!!VTY*
+exec-timeout 4 0
+transport input ssh
+login local
+banner motd "This is a secure system. Authorized access only."
+ipv6 unicast-routing		// enable IPv6 routing
+
+vlan configuration
+---------------------
+basic switch configuration
+interface configuration (assign ip address and issue no shutdown)
+Configure PC host (ipv4 and default-gateway)
+Create VLAN
+	vlan 99
+	name Management
+Assign VLANs to the correct switch interfaces
+	int g0/1
+	switchport mode access
+	switchport access vlan 10
+configure trunk
+	int f0/1
+	switchport mode trunk
+	switchport nonegotiate
+	switchport trunk native vlan 100
+	switchport trunk allowed vlan 10,20,30
+
+Voice VLAN
+--------------
+S3(config-vlan)# vlan 150
+S3(config-vlan)# name VOICE
+S3(config-if)# mls qos trust cos
+S3(config-if)# switchport voice vlan 150
+
+Extra notes : 
+no switchport access vlan to change the membership of a port back to the default VLAN 1
+no vlan vlan-id to delete a VLAN
+no switchport trunk allowed vlan
+no switchport trunk native vlan
+show dtp interface
+
+Router-on-a-stick
+--------------------
+Create and name the VLANs to switch
+	S1(config)# vlan 10
+	S1(config-vlan)# name LAN10
+Create the management interface
+	S1(config)# interface vlan 99
+	S1(config-if)# ip add 192.168.99.2 255.255.255.0
+	S1(config)# ip default-gateway 192.168.99.1
+	S1(config-if)# no shut
+Configure access ports
+	S1(config)# interface fa0/6
+	S1(config-if)# switchport mode access
+	S1(config-if)# switchport access vlan 10
+Configure trunk port on switch
+	S1(config)# interface fa0/1
+	S1(config-if)# switchport mode trunk
+	S1(config-if)# no shut
+	S1(config-if)# exit
+	S1(config)# interface fa0/5
+	S1(config-if)# switchport mode trunk
+	S1(config-if)# no shut
+	S1(config-if)# end
+configure subinterfaces on router
+	int g0/0/1.10
+	description Default Gateway for VLAN 10
+	encapsulation dot1Q 10 [native]
+	ip address 172.17.30.1 255.255.255.0
+configure PC hosts (ip address and default-gateway)
+test connectivity
+
+Router-on-a-Stick Inter-VLAN Routing Verification
+-----------------------------------------------------------
+show ip route
+show ip interface brief
+show interfaces
+show interfaces trunk
+
+Configure EtherChannel (PAgP)
+-------------------------------------
+Notes : channel-group 2 mode [desirable/auto/on]
+
+Configure the ports on both switches as static trunk ports
+
+S1(config)# interface range f0/21 – 22
+S1(config-if-range)# shutdown
+S1(config-if-range)# channel-group 1 mode desirable
+S1(config-if-range)# no shutdown
+ 
+S3(config)# interface range f0/21 - 22
+S3(config-if-range)# shutdown
+S3(config-if-range)# channel-group 1 mode desirable
+S3(config-if-range)# no shutdown
+
+S1(config)# interface port-channel 1
+S1(config-if)# switchport mode trunk
+ 
+S3(config)# interface port-channel 1
+S3(config-if)# switchport mode trunk
+
+S1# show etherchannel summary
+S3# show etherchannel summary
+
+Configure EtherChannel (LACP)
+-------------------------------------
+Notes : channel-group 2 mode [active/auto/desirable/on/passive]
+S1(config)# interface range g0/1 - 2
+S1(config-if-range)# shutdown
+S1(config-if-range)# channel-group 2 mode active
+S1(config-if-range)# no shutdown
+
+S1(config-if-range)# interface port-channel 2
+S1(config-if)# switchport mode trunk
+
+S2(config)# interface range g0/1 - 2
+S2(config-if-range)# shutdown
+S2(config-if-range)# channel-group 2 mode active
+S2(config-if-range)# no shutdown
+
+S2(config-if-range)# interface port-channel 2
+S2(config-if)# switchport mode trunk
+
+Port Channel 2 is not operative because Spanning Tree Protocol placed some ports into blocking mode. Unfortunately, those ports were the Gigabit ports. In this topology, you can restore these ports by configuring S1 to be primary root for VLAN 1. You could also set the priority to 24576.
+
+S1(config)# spanning-tree vlan 1 root primary
+or
+S1(config)# spanning-tree vlan 1 priority 24576
+
+HSRP
+-------
+R1(config)# interface g0/1
+R1(config-if)# standby version 2
+R1(config-if)# standby [group number] ip 192.168.1.254
+R1(config-if)# standby 1 priority 150
+R1(config-if)# standby 1 preempt
+R1# show standby
+
+R3(config)#int g0/0
+R3(config-if)#standby version 2
+R3(config-if)#standby 1 ip 192.168.1.254
+R3# show standby
+
+EIGRP
+--------
+R1(config)# router eigrp 1
+R2(config)# router eigrp 1
+R3(config)# router eigrp 1
+
+***Only advertise directly connected network (C)
+R1(config-router)# network 172.16.1.0 0.0.0.255
+R1(config-router)# network 172.16.3.0 0.0.0.3
+R1(config-router)# network 192.168.10.4 0.0.0.3
+
+R2(config-router)#network 172.16.2.0 0.0.0.255
+R2(config-router)#network 172.16.3.0 0.0.0.3
+R2(config-router)#network 192.168.10.8 0.0.0.3
+
+R3(config-router)#network 192.168.10.8 0.0.0.3
+R3(config-router)#network 192.168.10.4 0.0.0.3
+R3(config-router)#network 192.168.1.0 0.0.0.255
+
+R1(config-router)# passive-interface g0/0
+R2(config-router)# passive-interface g0/0
+R3(config-router)# passive-interface g0/0
+
+R1(config-router)# no auto-summary
+R2(config-router)# no auto-summary
+R3(config-router)# no auto-summary
+
+R1(config)# copy run start
+R2(config)# copy run start
+R3(config)# copy run start
+
+R1(config)# show ip eigrp neighbors
+R2(config)# show ip eigrp neighbors
+R3(config)# show ip eigrp neighbors
+
+IPv4/v6 Next-Hop Static Route
+-------------------------------
+ip route [n/w address] [s/m] [exit-interface/next-hop]
+ip route 172.16.1.0 255.255.255.0 s0/1/0
+
+exp:
+ip route 10.10.10.0 255.255.255.0 g0/0/0
+ip route 172.16.18.0 255.255.255.0 g0/0/0
+ip route 172.16.28.0 255.255.255.0 g0/0/0
+ip route 172.16.38.0 255.255.255.0 g0/0/0
+
+ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ipv6-address]} [distance]
+ipv6 route 2001:db8:acad:1::/64 s0/1/0
+
+Propagating a Default Route in EIGRP for IPv4 and IPv6
+-----------------------------------------------------------------------
+//[[Send all packets destined for networks not in my routing table to Serial0/1/0]]
+IPv4-Edge(config)# ip route 0.0.0.0 0.0.0.0 Serial0/1/0
+IPv4-Edge(config)# router eigrp 1
+IPv4-Edge(config-router)# redistribute static
+
+IPv6-Edge(config)# ipv6 route ::/0 Serial0/1/0
+IPv6-Edge(config)# ipv6 router eigrp 1
+IPv6-Edge(config-rtr)# redistribute static
+
+static route
+-------------
+ip route 172.168.18.0 255.255.255.0 GigabitEthernet 0/0/0
+
+Switch Security Configuration
+--------------------------------------
+Create a Secure Trunk
+=================
+disable DTP negotiation - switchport nonegotiate
+assign native vlan to use other vlan instead of vlan 1 - switchport trunk native vlan 48
+
+Secure Unused Switchports
+====================
+shutdown all unuse port
+
+Implement Port Security
+==================
+SW-1(config)#interface range fa0/1, fa0/2, fa0/10,fa0/24
+SW-1(config-if-range)#switchport port-security
+SW-1(config-if-range)#switchport port-security maximum 4
+
+SW-1(config)#interface FastEthernet0/1
+SW-1(config-if)#switchport port-security mac-address 0010.11E8.3CBB
+SW-1(config-if-range)#switchport port-security mac-address sticky
+SW-1(config-if-range)#switchport port-security violation restrict
+
+switchport port-security aging time 60
+switchport port-security aging type inactivity
+switchport port-security violation protect
+
+Configure PortFast, and BPDU Guard
+============================
+SW-1(config)#interface range fa0/1, fa0/2, fa0/10,fa0/24
+SW-1(config-if-range)#spanning-tree portfast
+SW-1(config-if-range)#spanning-tree bpduguard enable
+
+Configure SW-2 so that all access ports will use PortFast by default.
+SW-2(config)#spanning-tree portfast default
+
+Implement DHCP snooping security
+==========================
+enable DHCP snooping and configure DHCP snooping on VLAN 10
+S2(config)# ip dhcp snooping
+S2(config)# ip dhcp snooping vlan 10
+
+
+Configure the trunk port on S2 as a trusted port
+S2(config)# interface f0/1
+S2(config-if)# ip dhcp snooping trust
+
+Limit the untrusted port, F18 on S2, to five DHCP packets per second
+S2(config)# interface f0/18
+S2(config-if)# ip dhcp snooping limit rate 5
+
+S2# show ip dhcp snooping
+
+
+LooZiXuan_RSD2-G5.pka 
