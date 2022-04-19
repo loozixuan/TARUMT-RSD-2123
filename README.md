@@ -2,8 +2,8 @@
 
 
 ### About this Repository
-- Learning materials in **TAR UC Degree in RSD** for revision purposes. 
-- Materials include `self-study notes`, `tutorial answers`, `practical codes` and `PYQ tried or discussed by lecturer/tutor`.
+- Recorded learning materials in **TAR UC Degree in RSD** 
+- Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by lecturer/tutor`
 
 ### Materials overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
@@ -21,3 +21,12 @@
 | 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
 | 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes |
 
+### Donation
+If you found these materials are useful, you can make a donation (RM 5-10) at
+```
+Bank Name   : Public Bank Berhad
+Acc number  : 6356859708
+```
+
+### Author
+Loo Zi Xuan, <a href="#">loozx-wm19@student.tarc.edu.my</a>
