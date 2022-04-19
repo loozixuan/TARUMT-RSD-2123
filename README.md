@@ -1,9 +1,9 @@
-## Bachelor of Information Technology (Honours) in Software Systems Development - RSD 
+## Software Systems Development - RSD Study Materials
 
 
-### :memo: Introduction for this repository
-- Learning materials in **TAR UC Degree-RSD** for revision purposes *(the learning process is still ongoing -- currently on Y2S3)*. 
-- Materials include `self-study notes`, `tutorial answers`, `practical codes`, `PYQ tried or discussed by lecturer/tutor`, and `extra notes for some of the subject`.
+### About this Repository
+- Learning materials in **TAR UC Degree in RSD** for revision purposes. 
+- Materials include `self-study notes`, `tutorial answers`, `practical codes` and `PYQ tried or discussed by lecturer/tutor`.
 
 ### Materials overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
@@ -20,3 +20,4 @@
 | 10.  | BAIT3173 Integrative Programming  | Y2S3  | Practical Codes, Self assignment notes |
 | 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
 | 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes |
+
