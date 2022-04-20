@@ -2,8 +2,9 @@
 
 
 ### About this Repository
-- Recorded learning materials in **TAR UC Degree in RSD** 
+- Recorded learning materials in **TAR UC Degree RSD** 
 - Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by lecturer/tutor`
+- Learning progression : Year 2 Semester 3
 
 ### Materials overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
@@ -20,9 +21,8 @@
 | 10.  | BAIT3173 Integrative Programming  | Y2S3  | Practical Codes, Self assignment notes |
 | 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
 | 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes |
-
 ### Donation
-If you found these materials are useful, you can make a donation (RM 5-10) at
+If you found these materials are useful, you can make a donation (~5-10 ringgit or based on your preference) at
 ```
 Bank Name   : Public Bank Berhad
 Acc number  : 6356859708
