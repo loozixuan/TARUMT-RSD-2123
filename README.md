@@ -24,10 +24,11 @@
 | 13.  | MPU-3113 Hubungan Etnik  | Y2S3  | Nota-nota bab 3,4,5,8 serta contoh soalan dan jawapan |
 
 ### Donation
-If you found these materials are useful, you can make a donation (~5-10 ringgit or based on your preference) at
+If you found these materials are useful, you can make a donation at
 ```
-Bank Name   : Public Bank Berhad
-Acc number  : 6356859708
+Bank Name       : Public Bank Berhad
+Account number  : 6356859708
+Donation amount : decide by you (i.e 5-10 ringgit)
 ```
 
 ### Author
