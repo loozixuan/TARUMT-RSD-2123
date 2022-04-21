@@ -21,6 +21,8 @@
 | 10.  | BAIT3173 Integrative Programming  | Y2S3  | Practical Codes, Self assignment notes |
 | 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
 | 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes |
+| 13.  | MPU-3113 Hubungan Etnik  | Y2S3  | Nota-nota bab 3,4,5,8 serta contoh soalan dan jawapan |
+
 ### Donation
 If you found these materials are useful, you can make a donation (~5-10 ringgit or based on your preference) at
 ```
