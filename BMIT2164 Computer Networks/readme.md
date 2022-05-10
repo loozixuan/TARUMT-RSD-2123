@@ -28,7 +28,8 @@ Topics might come out on SBA
 ### Final Exam Tips
 Chapter 1 - 11
 ```
-- refer to BMIT2164 past year papers
+- Refer to BMIT2164 past year papers
+- In 2021/2022 MAY PAPER, C10 - 11 (WLAN Concepts and WLAN Configurations) is not coming out in the final physical exam
 ```
 ### Assignment
 ```
