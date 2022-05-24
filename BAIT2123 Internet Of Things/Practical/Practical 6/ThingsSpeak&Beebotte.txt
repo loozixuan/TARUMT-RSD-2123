@@ -1,0 +1,13 @@
+pip install beebotte
+
+u can use pip list to double confirm
+
+ThingSpeak
+Password: Loozx123
+Write API key: U2DTD6F2C6KE1HLT 
+Read API Keys: WNND8I7DP8FBUUIY
+
+beebotte
+Password: Loozx123
+API Key: hiISTRrZCrP5oEQZCe7s4nkf
+Secret Key: H0s80ebHZRbiG9lO4Ox1TA77wMtnRHft
