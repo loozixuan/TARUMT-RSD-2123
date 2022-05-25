@@ -1,12 +1,13 @@
 ## Software Systems Development - RSD Study Materials
 
 ### About this Repository
-:link: This repository contains recorded learning materials in **RSD** during my year of study<br/>
-:link: Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). Please do not hesitate to contact me through Gmail if I can be of any further assistance. <br/>
-:link: Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by lecturer/tutor`<br/>
-:link: Learning progression : Year 2 Semester 3 (done)<br/>
+- This repository contains recorded learning materials in **RSD** during my year of study.
+- Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). 
+- Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`.
+- Please do not hesitate to contact me through email if I can be of any further assistance. 
+- Learning progression: Y2S3 (done)
 
-### Materials overview 
+### Course Materials Overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
 | ------------- | ------------- | ------------- | ------------- |
 | 1.  | BACS2053 Object Oriented and Analysis Design  | Y2S1  | Tutorial Answers  |
