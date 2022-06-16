@@ -5,7 +5,7 @@
 - Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). 
 - Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`.
 - Please do not hesitate to contact me through email if I can be of any further assistance. 
-- Learning progression: Y2S3 (done)
+- 🕮 202205 - Y3S1
 
 ### Course Materials Overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
