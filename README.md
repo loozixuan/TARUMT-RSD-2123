@@ -25,7 +25,7 @@
 | 14.  | BACS3033 Social and Professional Issues  | Y3S1  | Tutorial Answers, Midterm Answer |
 | 15.  | BAIT2073 Mobile Application Development  | Y3S1  | Exam-related notes, Past year papers (try) |
 | 16.  | BBFA1043 Principles of Accounting  | Y3S1  | Tutorial Answers, Midterm Answer, Past year papers (try) |
-| 17.  | BMIT3094 Advanced Computer Networks  | Y3S1  | Tutorial Answers, Cisco Commands Sheet, Past year papers (try) |
+| 17.  | BMIT3094 Advanced Computer Networks  | Y3S1  | Tutorial Answers, Midterm Answer, Cisco Commands Sheet, Past year papers (try) |
 
 
 ### Donation
