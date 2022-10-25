@@ -5,7 +5,6 @@
 - Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). 
 - Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`.
 - Please do not hesitate to contact me through email if I can be of any further assistance. 
-- 🕮 202205 - Y3S1
 
 ### Course Materials Overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
@@ -23,6 +22,10 @@
 | 11.  | BMIT2164 Computer Networks  | Y2S3  | Tutorial Answers, Cisco Commands Cheatsheet |
 | 12.  | BMIS2003 Blockchain Application Development  | Y2S3  | solidity codes, Past year papers (try) |
 | 13.  | MPU-3113 Hubungan Etnik  | Y2S3  | Nota-nota bab 3,4,5,8 serta contoh soalan dan jawapan, Penilaian 3 |
+| 14.  | BACS3033 Social and Professional Issues  | Y3S1  | Tutorial Answers, Midterm Answer |
+| 15.  | BAIT2073 Mobile Application Development  | Y3S1  | Exam-related notes, Past year papers (try) |
+| 16.  | BBFA1043 Principles of Accounting  | Y3S1  | Tutorial Answers, Midterm Answer, Past year papers (try) |
+| 17.  | BMIT3094 Advanced Computer Networks  | Y3S1  | Tutorial Answers, Cisco Commands Sheet, Past year papers (try) |
 
 
 ### Donation
