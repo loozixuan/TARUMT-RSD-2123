@@ -4,7 +4,7 @@
 - This repository contains recorded learning materials in **RSD** during my year of study.
 - Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). 
 - Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`. Please do not hesitate to contact me through email if I can be of any further assistance. 
-- If you found these materials useful, you can make a donation [info stated below](#Donation) , a minute of your reading time could be an hour of my effort. Cheers!
+- If you found these materials useful, you can make a donation ([info stated below](#Donation)), a minute of your reading time could be an hour of my effort. Cheers!
 
 ### Course Materials Overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
