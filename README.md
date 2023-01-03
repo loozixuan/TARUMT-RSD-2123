@@ -26,6 +26,8 @@
 | 15.  | BAIT2073 Mobile Application Development  | Y3S1  | Exam-related notes, Past year papers (try) |
 | 16.  | BBFA1043 Principles of Accounting  | Y3S1  | Tutorial Answers, Midterm Answer, Past year papers (try) |
 | 17.  | BMIT3094 Advanced Computer Networks  | Y3S1  | Tutorial Answers, Midterm Answer, Cisco Commands Sheet, Past year papers (try) |
+| 18.  | MPU 3322 Cotemporary Malaysian Issues  | Y3S2  | coursework explanation |
+| 19.  | MPU3213 Tamadun Islam dan Asia  | Y3S2  | pelan kursus, contoh soalan dan jawapan bagi penilaian 3 |
 
 ### Donation
 If you found these materials are useful :smile: You can make a donation at
