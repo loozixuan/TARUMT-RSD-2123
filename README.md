@@ -1,10 +1,11 @@
 ## Software Systems Development - RSD Study Materials
 
 ### About this Repository
-- This repository contains recorded learning materials in **RSD** during my year of study.
+- This repository contains recorded learning materials in **RSD** from 2021 to 2023.
 - Resources in this repository are only suggested, hence, you are encouraged to exercise your own judgment while utilizing these resources, better, do approach your tutor/instructor for the most accurate answer(s). 
-- Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`. Please do not hesitate to contact me through email if I can be of any further assistance. 
-- If you found these materials useful, you can make a donation ([info stated below](#Donation)), a minute of your reading time could be an hour of my effort. Cheers!
+- Materials include `self-study notes`, `tutorial answers`, `practical codes`, `extra exercises` and `PYQ tried or discussed by the lecturer/tutor`. Most of the subjects include a read-me file to illustrate the coursework component and exam format. 
+- Please do not hesitate to contact me through email if I can be of any further assistance. 
+- If you found these materials useful, you can make a donation ([info stated below](#Donation)), a minute of your reading time could be an hour or a day of my effort. Cheers!
 
 ### Course Materials Overview 
 | No  | Subject Name | Sem | Materials Included in this subject |
@@ -42,6 +43,14 @@ Donation amount : You can decide by your own
 Touch 'n Go eWallet
 ```
 <img src="https://user-images.githubusercontent.com/66896420/177020647-d0e3de05-12d4-4452-86dd-3e8e807a5613.jpeg" data-canonical-src="https://user-images.githubusercontent.com/66896420/177020647-d0e3de05-12d4-4452-86dd-3e8e807a5613.jpeg" width="250" height="250" />
+
+### Additional Notes
+- Some of the subjects did not include in this repository:
+  1. **BJEL2013 ENGLISH FOR CAREER PREPARATION** - full coursework component: written assignment (30%), presentation (30%), oral assesment (40%)
+  2. **BACS3403	PROJECT I** - Project I portfolio from Chapter 1 - 4
+  3. **BACS3413	PROJECT II** - System Development, System Testing with supervisor and moderator, Project II portfolio from Chapter 1 - 6
+  4. **BAIT305C	INDUSTRIAL TRAINING** - RSD Internship for 6 months
+- Do contact me if I can be of any further assistance for these 4 subjects.
 
 ### Author
 Loo Zi Xuan, <a href="#">loozx-wm19@student.tarc.edu.my</a>
