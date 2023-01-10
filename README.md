@@ -42,7 +42,8 @@ Donation amount : You can decide by your own
 
 Touch 'n Go eWallet
 ```
-<img src="https://user-images.githubusercontent.com/66896420/177020647-d0e3de05-12d4-4452-86dd-3e8e807a5613.jpeg" data-canonical-src="https://user-images.githubusercontent.com/66896420/177020647-d0e3de05-12d4-4452-86dd-3e8e807a5613.jpeg" width="250" height="250" />
+<img src="https://user-images.githubusercontent.com/66896420/211550940-4c4f5ce1-22dc-44f3-bfcf-e79b3e814603.jpeg" width="300" height="350" />
+
 
 ### Additional Notes
 - Some of the subjects did not include in this repository:
